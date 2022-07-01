@@ -1,0 +1,41 @@
+/* цвет фона темных блоков на главной и портфолио #2F303A */
+/*цвет текста в body #757575 */
+/*голубой цвет текста в лого Web #000000 */
+/* темный цвет текста в лого Web #2196F3 */
+
+:root {
+  --background-dark-grey: #2f303a;
+  --grey-color: #757575;
+  --blue-logo-color:#2196F3;
+  --dark-logo-color:#000000;
+}
+
+body {
+  color: var(--grey-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+}
+
+.header {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 1,2;
+  color: var(--blue-logo-color);
+  text-decoration: none;
+ 
+}
+
+.dark-logo{
+color: var(--dark-logo-color);
+}
