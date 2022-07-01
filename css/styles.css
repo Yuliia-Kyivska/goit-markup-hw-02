@@ -2,12 +2,19 @@
 /*цвет текста в body #757575 */
 /*голубой цвет текста в лого Web #000000 */
 /* темный цвет текста в лого Web #2196F3 */
+/* цвет верхнего меню #212121; */
+/* цвет контактов верхнего меню #757575; */
+/* белый цвет #FFFFFF */
+/*цвет фона для героя #2F303A; */
+
 
 :root {
-  --background-dark-grey: #2f303a;
-  --grey-color: #757575;
+  --background-dark-grey:#2f303a;
+  --grey-color:#757575;
   --blue-logo-color:#2196F3;
   --dark-logo-color:#000000;
+  --white-color:#ffffff;
+  --current-color-dark: #212121
 }
 
 body {
@@ -21,21 +28,91 @@ body {
 .header {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  line-height: 1,14;
   letter-spacing: 0.02em;
 }
 
 .logo {
+  color: var(--blue-logo-color);
+  font-family: 'Raleway', cursive;
   font-weight: 700;
   font-size: 26px;
-  text-decoration: none;
   line-height: 1,2;
-  color: var(--blue-logo-color);
   text-decoration: none;
- 
 }
 
-.dark-logo{
-color: var(--dark-logo-color);
+.dark-logo {
+  color: var(--dark-logo-color);
 }
+
+.logo:hover,
+.logo:focus {
+  color: var(--dark-logo-color);
+}
+
+.dark-logo:hover,
+.dark-logo:focus {
+  color: var(--blue-logo-color);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--current-color-dark);
+}
+
+.list {
+  list-style: none;
+}
+.nav-menu,
+.nav-contakt {
+  color: var(--current-color-dark);
+}
+
+.nav-menu .blue {
+  color: var(--blue-logo-color);
+}
+
+.nav-menu .link:hover,
+.nav-menu .link:focus {
+  color: var(--current-color-dark);
+}
+
+.header-contakt {
+  color: var(--grey-color);
+}
+
+.header-contakt .link:hover,
+.header-contakt .link:focus {
+  color: var(--blue-logo-color);
+}
+
+/*Hero*/
+
+.hero {
+  background-color: var(--background-dark-grey);
+}
+.hero-title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  text-transform: uppercase;
+  line-height: 1, 4;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.hero-button {
+  cursor: pointer;
+  color: var(--white-color);
+  background-color: var(--blue-logo-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1, 9;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/*Button*/
