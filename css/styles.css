@@ -6,15 +6,16 @@
 /* цвет контактов верхнего меню #757575; */
 /* белый цвет #FFFFFF */
 /*цвет фона для героя #2F303A; */
-
+/*цвет кнопки неактивной в портфолио #F5F4FA */
 
 :root {
-  --background-dark-grey:#2f303a;
-  --grey-color:#757575;
-  --blue-logo-color:#2196F3;
-  --dark-logo-color:#000000;
-  --white-color:#ffffff;
-  --current-color-dark: #212121
+  --background-dark-grey: #2f303a;
+  --grey-color: #757575;
+  --blue-logo-color: #2196f3;
+  --dark-logo-color: #000000;
+  --white-color: #ffffff;
+  --current-color-dark: #212121;
+  --light-gray-backg: #f5f4fa;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
 .header {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  line-height: 1,14;
+  line-height: 1, 14;
   letter-spacing: 0.02em;
 }
 
@@ -37,7 +38,7 @@ body {
   font-family: 'Raleway', cursive;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1,2;
+  line-height: 1, 2;
   text-decoration: none;
 }
 
@@ -47,12 +48,12 @@ body {
 
 .logo:hover,
 .logo:focus {
-  color: var(--dark-logo-color);
+  color: var(--blue-logo-color);
 }
 
 .dark-logo:hover,
 .dark-logo:focus {
-  color: var(--blue-logo-color);
+  color: var(--dark-logo-color);
 }
 
 .link {
@@ -68,13 +69,9 @@ body {
   color: var(--current-color-dark);
 }
 
-.nav-menu .blue {
-  color: var(--blue-logo-color);
-}
-
 .nav-menu .link:hover,
 .nav-menu .link:focus {
-  color: var(--current-color-dark);
+  color: var(--blue-logo-color);
 }
 
 .header-contakt {
@@ -116,3 +113,41 @@ body {
 }
 
 /*Button*/
+.select-button {
+  cursor: pointer;
+  font-family: inherit;
+  background-color: var(--light-gray-backg);
+  color: var(--current-color-dark);
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border-radius: 4px;
+}
+
+.select-button:hover,
+.select-button:focus {
+  background-color: var(--blue-logo-color);
+  color: var(--white-color);
+}
+
+.features-list {
+  
+  font-family: inherit;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+.header-features {
+  color: var(--current-color-dark);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  text-transform: uppercase;
+}
+
+.content-features {
+  color: var(--grey-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 71;
+}
