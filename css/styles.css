@@ -15,7 +15,7 @@
   --blue-logo-color: #2196f3;
   --dark-logo-color: #000000;
   --white-color: #ffffff;
-  --current-color-dark: #212121;
+  --color-dark: #212121;
   --light-gray-backg: #f5f4fa;
   --footer-primary-color: rgba(255, 255, 255, 0.6);
 }
@@ -35,7 +35,7 @@ p {
 
 .header {
   font-weight: 500;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -44,7 +44,7 @@ p {
   font-family: 'Raleway', cursive;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 2;
+  line-height: 1.2;
   text-decoration: none;
 }
 
@@ -62,7 +62,13 @@ p {
 
 .link {
   text-decoration: none;
-  color: var(--current-color-dark);
+  color: var(--color-dark);
+}
+.we-do-item,
+.benefits-item,
+.team-item {
+  text-decoration: none;
+  color: var(--color-dark);
 }
 .active-page {
   color: var(--blue-logo-color);
@@ -71,9 +77,13 @@ p {
 .list {
   list-style: none;
 }
-.nav-menu,
-.nav-contakt {
-  color: var(--current-color-dark);
+.we-do-list,
+.benefits-list,
+.team-list {
+  list-style: none;
+}
+.nav-menu {
+  color: var(--color-dark);
 }
 
 .nav-menu .link:hover,
@@ -109,9 +119,10 @@ p {
   cursor: pointer;
   color: var(--white-color);
   background-color: var(--blue-logo-color);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 9;
+  line-height: 1.9;
   text-align: center;
   align-items: center;
   letter-spacing: 0.06em;
@@ -125,7 +136,7 @@ p {
   cursor: pointer;
   font-family: inherit;
   background-color: var(--light-gray-backg);
-  color: var(--current-color-dark);
+  color: var(--color-dark);
   border: none;
   font-weight: 500;
   font-size: 16px;
@@ -138,52 +149,53 @@ p {
   background-color: var(--blue-logo-color);
   color: var(--white-color);
 }
+.select-list {
+}
 
 /* Контент и заголовки */
-.tytle-other {
+.benefits-tytle {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   text-transform: uppercase;
+  color: var(--color-dark);
 }
 
-.content {
-  font-size: 14px;
-  line-height: 1, 71;
+.benefits-text {
 }
-.tytle-we-do {
+.section-tytle {
   font-weight: 700;
+  color: var(--color-dark);
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
 }
 
-.section-others {
+.team {
   background-color: var(--light-gray-backg);
 }
 
-.tytle-team {
-  font-weight: 500;
+.team-specialist,
+.team-tytle {
   font-size: 16px;
-  line-height: 1, 2;
+  line-height: 1.2;
   text-align: center;
 }
 
-.specialist-team {
-  font-size: 16px;
-  line-height: 1, 2;
-  text-align: center;
+.team-tytle {
+  font-weight: 500;
+  color: var(--color-dark);
 }
 
 /* портфолио контент */
 
 .content-portfolio {
   font-size: 16px;
-  line-height: 1, 88;
+  line-height: 1.88;
 }
 
 .tytle-portfolio {
-  color: var(--current-color-dark);
+  color: var(--color-dark);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
